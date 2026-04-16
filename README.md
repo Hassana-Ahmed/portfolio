@@ -1,16 +1,22 @@
-# My Portfolio Wesbite - Overview 🚀
+# Hassan Ahmed | Cloud Support & DevOps Engineer 🚀
 
-This repository contains the open source version of my porfolio website.
-Do check it out!
+Welcome to my personal portfolio repository. This project showcases my journey, technical skills, and the projects I've built in the Cloud and DevOps ecosystem.
 
-## Instructions 🛠️
+## 🌐 Live Demo
+You can view the live site here: **[APNA-VERCEL-LINK-YAHAN-PASTE-KAREIN]**
 
-I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
+## 🛠️ Tech Stack
+* **Cloud:** AWS, Azure, Google Cloud, Alibaba Cloud
+* **DevOps:** Terraform, Ansible, Docker, Kubernetes, Jenkins, GitHub Actions
+* **Web:** HTML5, CSS3, JavaScript (GSAP for animations)
+* **Monitoring & Security:** SOC Tier 1 Analyst skills, CIA Triad, Threat Intelligence
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
+## 📌 Project Highlights
+* **Multi-Cloud Infrastructure:** Automated 3-tier architectures using IaC.
+* **VDI Deployment:** Managed AWS Workspaces and Active Directory for corporate clients.
+* **CI/CD Pipelines:** Automated deployment workflows for web applications.
 
-![Portfolio-Preview](public/images/preview.png)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+## 🚀 How to Run Locally
+1. Clone the repo:
+   ```bash
+   git clone [https://github.com/Hassana-Ahmed/portfolio.git](https://github.com/Hassana-Ahmed/portfolio.git)
