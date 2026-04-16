@@ -1,0 +1,194 @@
+/* ===== CERTIFICATIONS SECTION ===== */
+.certs-section {
+  padding: 100px 40px;
+  background: linear-gradient(180deg, var(--bg-primary), var(--bg-secondary), var(--bg-primary));
+  position: relative;
+  overflow: hidden;
+}
+
+.certs-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.certs-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.cert-flip-container {
+  width: 320px;
+  height: 380px;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.cert-flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cert-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cert-front {
+  background: rgba(13, 20, 40, 0.9);
+  border: 1px solid var(--cert-color, var(--accent-blue));
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3), inset 0 0 40px rgba(0,0,0,0.2);
+}
+
+.cert-front-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at top, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cert-logo-area {
+  margin-bottom: 20px;
+}
+
+.cert-svg-logo {
+  width: 64px;
+  height: 64px;
+}
+
+.cert-badge-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--bg-primary);
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+  letter-spacing: 0.1em;
+}
+
+.cert-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.cert-issuer {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.cert-year {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--cert-color, var(--accent-blue));
+  background: rgba(0, 212, 255, 0.08);
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.cert-hint {
+  position: absolute;
+  bottom: 16px;
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  opacity: 0.6;
+  letter-spacing: 0.05em;
+}
+
+/* Back face */
+.cert-back {
+  background: rgba(0, 10, 25, 0.95);
+  border: 1px solid var(--cert-color, var(--accent-green));
+  transform: rotateY(180deg);
+}
+
+.cert-back-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 255, 136, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.cert-back-icon {
+  font-size: 2rem;
+  color: var(--cert-color, var(--accent-green));
+  margin-bottom: 12px;
+}
+
+.cert-back h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--cert-color, var(--accent-green));
+  margin-bottom: 14px;
+}
+
+.cert-back-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.cert-back-details {
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cert-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-detail-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.05em;
+}
+
+.cert-detail-val {
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.cert-active {
+  color: var(--accent-green);
+}
+
+@media (max-width: 720px) {
+  .cert-flip-container {
+    width: 280px;
+    height: 340px;
+  }
+}

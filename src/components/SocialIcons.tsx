@@ -8,8 +8,11 @@ import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
+import { usePortfolio } from "../context/PortfolioContext";
 
 const SocialIcons = () => {
+  const { data } = usePortfolio();
+  
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
 
@@ -59,28 +62,22 @@ const SocialIcons = () => {
   return (
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
-        <span>
-          <a href="https://github.com/rajeshchityal" target="_blank">
-            <FaGithub />
-          </a>
-        </span>
-        <span>
-          <a href="https://www.linkedin.com/in/rajeshchityal" target="_blank">
-            <FaLinkedinIn />
-          </a>
-        </span>
-        <span>
-          <a href="https://x.com/rajeshchityal" target="_blank">
-            <FaXTwitter />
-          </a>
-        </span>
-        <span>
-          <a href="https://www.instagram.com/rajeshchityal" target="_blank">
-            <FaInstagram />
-          </a>
-        </span>
+        {data?.personalInfo?.github && (
+          <span>
+            <a href={data.personalInfo.github} target="_blank" rel="noreferrer">
+              <FaGithub />
+            </a>
+          </span>
+        )}
+        {data?.personalInfo?.linkedin && (
+          <span>
+            <a href={data.personalInfo.linkedin} target="_blank" rel="noreferrer">
+              <FaLinkedinIn />
+            </a>
+          </span>
+        )}
       </div>
-      <a className="resume-button" href="#">
+      <a className="resume-button" href="/Hassan_Ahmed_Resume.pdf" download rel="noreferrer">
         <HoverLinks text="RESUME" />
         <span>
           <TbNotes />
