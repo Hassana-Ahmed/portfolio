@@ -14,6 +14,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    alert("Message service is being configured. Please reach out via LinkedIn or Email directly.");
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
     setFormState({ name: "", email: "", message: "" });
@@ -186,7 +187,7 @@ const ContactSection = () => {
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 0.8 }}
       >
-        <p>© 2026 Hassan Ahmed · Built with ❤️ · Cloud Engineer & DevOps Specialist</p>
+        <p>© 2026 Hassan Ahmed · Built with ❤️ · DevOps Engineer & Multi-Cloud Specialist</p>
       </motion.div>
     </section>
   );

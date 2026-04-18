@@ -6,7 +6,7 @@ import "./styles/HeroSection.css";
 
 const lines = [
   { cmd: "$ whoami", out: "hassan-ahmed" },
-  { cmd: "$ cat role.txt", out: "Cloud Engineer | DevOps Specialist" },
+  { cmd: "$ cat role.txt", out: "DevOps Engineer | Multi-Cloud Specialist" },
   { cmd: "$ echo $LOCATION", out: "Karachi, Pakistan 🇵🇰" },
   { cmd: "$ cat skills.json", out: '["AWS","Azure","Terraform","Docker","K8s"]' },
   { cmd: "$ uptime --infra", out: "99.8% uptime ✓ — 20+ VMs managed" },

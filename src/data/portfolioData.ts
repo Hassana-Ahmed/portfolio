@@ -6,10 +6,10 @@ export const personalInfo = {
   email: "hassanahmed17824@gmail.com",
   phone: "+923442288242",
   location: "Karachi, Pakistan",
-  titles: ["Cloud Engineer", "DevOps Specialist", "Multi-Cloud Architect"],
+  titles: ["DevOps Engineer", "Multi-Cloud Specialist"],
   summary:
-    "Cloud Support Engineer with expertise in AWS, Azure, GCP, and Alibaba Cloud. Specialized in Infrastructure as Code (Terraform, Ansible), containerization (Docker, AWS ECS), and CI/CD automation. Proven track record managing 20+ VMware VMs with 99.8% uptime, delivering enterprise cloud solutions, and training 50+ professionals.",
-  github: "https://github.com/hassanahmed17824",
+    "DevOps Engineer | Multi-Cloud Specialist with expertise in AWS, Azure, GCP, and Alibaba Cloud. Specialized in Infrastructure as Code (Terraform, Ansible), containerization (Docker, AWS ECS), and CI/CD automation. Managing 20+ VMs with 99.8% uptime.",
+  github: "https://github.com/Hassana-Ahmed",
   linkedin: "https://www.linkedin.com/in/hassan-ahmed-722968325/",
 };
 
@@ -37,7 +37,6 @@ export const skills = [
     icon: "code",
     items: [
       { name: "Terraform", icon: "SiTerraform" },
-      { name: "CloudFormation", icon: "SiAmazonaws" },
       { name: "Ansible", icon: "SiAnsible" },
     ],
   },
@@ -45,7 +44,7 @@ export const skills = [
     category: "CI/CD",
     icon: "git",
     items: [
-      { name: "GitHub Actions", icon: "SiGithubactions" },
+      { name: "GitHub Actions", icon: "SiGitHubActions" },
       { name: "Jenkins", icon: "SiJenkins" },
     ],
   },
@@ -55,7 +54,6 @@ export const skills = [
     items: [
       { name: "Docker", icon: "SiDocker" },
       { name: "AWS ECS", icon: "SiAmazonecs" },
-      { name: "Amazon ECR", icon: "SiAmazonecs" },
     ],
   },
   {
@@ -64,12 +62,10 @@ export const skills = [
     items: [{ name: "CloudWatch", icon: "SiAmazoncloudwatch" }],
   },
   {
-    category: "Virtualization & Storage",
+    category: "Virtualization",
     icon: "server",
     items: [
       { name: "VMware vSphere", icon: "SiVmware" },
-      { name: "Amazon S3", icon: "SiAmazons3" },
-      { name: "Amazon RDS", icon: "SiAmazonrds" },
     ],
   },
 ];
@@ -99,35 +95,29 @@ export const certifications = [
 
 export const experience = [
   {
-    title: "Cloud Support Engineer",
-    company: "Sherdil IT Academy",
+    title: "DevOps Engineer",
+    company: "Sherdil Cloud",
     location: "Karachi, Pakistan",
     period: "Aug 2024 – Present",
     type: "present",
-    description:
-      "Educational institution specializing in IT and cloud technologies",
+    description: "Infrastructure, automation, and multi-cloud deployments",
     achievements: [
-      "Trained 50+ students and professionals on AWS, Azure, GCP, and Alibaba Cloud with hands-on labs",
+      "Specialized in Infrastructure as Code (Terraform, Ansible), containerization (Docker, AWS ECS), and CI/CD automation.",
       "Executed cloud projects achieving 30% cost optimization through resource right-sizing and reserved instances",
-      "Created training materials for Docker, Terraform, Ansible, and GitHub Actions CI/CD pipelines",
-      "Mentored students on cloud architecture, security configurations with 90% satisfaction rate",
       "Supported cloud migrations and infrastructure deployments across multi-cloud environments",
     ],
   },
   {
-    title: "IT Support Specialist",
-    company: "KSMC",
+    title: "Cloud Instructor",
+    company: "Sherdil IT Academy",
     location: "Karachi, Pakistan",
-    period: "Sep 2024 – Nov 2024",
-    type: "past",
-    description:
-      "Healthcare organization focused on infrastructure performance and reliability",
+    period: "Aug 2024 – Present",
+    type: "present",
+    description: "Training 50+ professionals on AWS, Azure, GCP, and DevOps tools",
     achievements: [
-      "Managed 20+ VMware VMs and cloud servers, maintaining 99.8% uptime through proactive monitoring",
-      "Reduced incident response time by 40% via daily monitoring, troubleshooting, and backup verification",
-      "Upgraded VMware vSphere from evaluation to standard license with zero downtime",
-      "Administered SharePoint servers including configuration management and user access control",
-      "Implemented proactive monitoring to prevent server issues before impacting operations",
+      "Trained 50+ professionals on AWS, Azure, GCP, and DevOps tools with hands-on labs",
+      "Mentored students on cloud architecture, security configurations with 90% satisfaction rate",
+      "Created training materials for Docker, Terraform, Ansible, and GitHub Actions CI/CD pipelines",
     ],
   },
 ];
@@ -135,44 +125,57 @@ export const experience = [
 export const projects = [
   {
     number: "01",
-    title: "3-Tier AWS Architecture with Terraform",
+    title: "3-Tier AWS Architecture",
     category: "Infrastructure as Code",
     description:
-      "Built production-grade 3-tier AWS architecture using Terraform with VPC, EC2, ALB, Auto Scaling, and multi-AZ RDS for high availability.",
-    tools: ["Terraform", "AWS EC2", "VPC", "ALB", "RDS", "Route53", "S3", "CloudWatch"],
+      "Built production-grade 3-tier AWS architecture using Terraform, Ansible, ASG, and RDS for high availability.",
+    tools: ["Terraform", "Ansible", "AWS ASG", "RDS", "VPC", "ALB"],
     metrics: [
       "87% faster deployments via Ansible automation",
       "Multi-AZ RDS for high availability",
       "Auto Scaling with health checks",
     ],
-    github: "https://github.com/hassanahmed17824",
+    github: "",
   },
   {
     number: "02",
-    title: "CI/CD Pipeline with GitHub Actions",
+    title: "CI/CD Pipeline",
     category: "DevOps Automation",
     description:
-      "Developed end-to-end CI/CD pipeline achieving 95% deployment success rate with automated testing, Docker builds, and ECR deployments.",
-    tools: ["GitHub Actions", "Docker", "Amazon ECR", "AWS ECS", "Nginx"],
+      "Developed end-to-end CI/CD pipeline using GitHub Actions, Octopus Deploy, and Docker for automated deployments.",
+    tools: ["GitHub Actions", "Octopus Deploy", "Docker", "Amazon ECR"],
     metrics: [
       "95% deployment success rate",
-      "60% Docker image size reduction via multi-stage builds",
-      "Automated ECR pushes with Git-based versioning",
+      "Automated ECR pushes with versioning",
+      "Zero-downtime deployments via Octopus",
     ],
-    github: "https://github.com/hassanahmed17824",
+    github: "",
   },
   {
     number: "03",
-    title: "Docker Containerization & ECS Deployment",
+    title: "Containerized App on AWS ECS + Fargate",
     category: "Containerization",
     description:
-      "Containerized applications deployed on AWS ECS with Fargate, featuring Nginx reverse proxy and Docker Compose local environment.",
-    tools: ["Docker", "Docker Compose", "AWS ECS", "Fargate", "Nginx", "ECR"],
+      "Containerized applications using multi-stage builds deployed on AWS ECS with Fargate for serverless management.",
+    tools: ["Docker", "AWS ECS", "Fargate", "Multi-stage Build"],
     metrics: [
-      "Serverless container management with Fargate",
-      "Local dev with Docker Compose + Nginx proxy",
+      "60% Docker image size reduction",
+      "Serverless container management",
       "Automated image versioning pipeline",
     ],
-    github: "https://github.com/hassanahmed17824",
+    github: "",
+  },
+  {
+    number: "04",
+    title: "Healthcare Infrastructure Support Project",
+    category: "Client Projects",
+    description: "Managed infrastructure performance and reliability for a healthcare client including VMware and SharePoint.",
+    tools: ["VMware vSphere", "SharePoint", "Monitoring", "Backup Systems"],
+    metrics: [
+      "Remotely managed 20+ VMware vSphere VMs",
+      "99.8% Infrastructure Uptime",
+      "Reduced incident response time by 40%"
+    ],
+    github: "",
   },
 ];
